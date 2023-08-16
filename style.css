@@ -311,7 +311,11 @@ body {
 /* -----------services----------- */
 
 
-
+@media(max-width:767px){
+    .head{
+        font-size: 2rem;
+    }
+}
 
 .about .container .col{
     flex-basis: 45%;
@@ -351,7 +355,6 @@ body {
 
 .about .container .col .descrip ul li a {
     text-decoration: underline;
-    color: #000; /* Adjust the link color as needed */
 }
 
 /* Responsive adjustments */
@@ -368,6 +371,10 @@ body {
     }
     .about .container .col .descrip span{
         margin-inline: 10px;
+    }
+    .about .container .col .descrip span {
+        position: relative;
+        top:5px;
     }
 }
 
