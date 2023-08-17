@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
 /* --------global styles ---------- */
 html{
@@ -99,7 +100,21 @@ header {
     width: 100%;
     border-radius: 0;
 }
-
+header .logo{
+    position: relative;
+}
+header .logo .logo-desc{
+    position: absolute;
+    bottom: -20px;
+    left: -17px;
+    
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -202,10 +217,13 @@ body {
 .landing .first-row h4 {
     font-size: 4.5rem;
      /* Adjust the font color as needed */
+     color: gray;
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
+.landing .first-row h4 span{
+    font-size: 3.5rem;
+}
 .landing .main-btn {
     margin-top: 30px;
 }
@@ -226,7 +244,10 @@ body {
     }
 
     .landing .first-row h4 {
-        font-size: 3rem;
+        font-size: 1.2rem;
+    }
+    .landing .first-row h4 span{
+        font-size: 1.2rem;
     }
 }
 
@@ -257,8 +278,13 @@ body {
 
 .head{
     text-align: center;
-    padding: 40px;
+    padding: 10px;
+    
     font-size: 3rem;
+    text-transform: uppercase;
+}
+.services .container{
+    padding-top: 1%;
 }
 .services .container .grid{
     display: grid;
@@ -316,7 +342,9 @@ body {
         font-size: 2rem;
     }
 }
-
+.about .container{
+    padding-block: 1%;
+}
 .about .container .col{
     flex-basis: 45%;
 }
@@ -329,11 +357,13 @@ body {
 .about .container .col .descrip h1 {
     display: flex;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .about .container .col .descrip span {
-    margin-right: 10px;
+    position: relative;
+    top:5px;
+    margin-inline: 10px;
 }
 
 .about .container .col .descrip .logo {
@@ -399,6 +429,8 @@ footer .col .logo{
     display: flex;
     gap: 20px;
     align-items: center;
+
+    justify-content: center;
 }
 
 footer .col:first-of-type p{
