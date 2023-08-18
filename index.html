@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="./node_modules/photoswipe/dist/photoswipe.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="./sources/images/reflection_logo.webp">
     <meta name="description" content="Reflection car care in rak | PPF | PDR | tinting | Smart paint | Rim Repair | Ceramic Coating">
+    <script type="text/javascript" src="https://www.microsoft.com/en-us/translator/translatorapi.js"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Reflection car care</title>
 </head>
 <body>
     <div class="home">
         <div class="vid">
-            <video src="./sources/videos/homevid.mp4" autoplay muted loop></video>
+            <video autoplay muted loop>
+                <source src="./sources/videos/homebacg.mp4" type="video/mp4">
+            </video>
         </div>
         <header class="container">
             <nav>
+                <div class="menu" id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul class = "nav-list" id="nav-list">
                     <li><a aria-label="home"href="#">home</a></li>
                     <li><a aria-label="services" href="#services">services</a></li>
@@ -26,9 +32,7 @@
                     <li><a aria-label="Contact" href="#footer">Contact </a></li>
                     
                 </ul>
-                <div class="menu" id="menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                
                 <div class="logo">
                     <img src="./sources/images/reflection_logo.webp" alt="logo" width="50px">
                     <div class="logo-desc">reflection</div>
@@ -44,7 +48,7 @@
                 <div class="rows">
                     <div class="first-row row white">
                         <h3>Welcome To Reflection</h3>
-                        <h4>Reflection <span>is a quality of you</span></h4>
+                        <h4><span>Reflection</span> is a quality of you</h4>
                         <div class="main-btn">
                             <a href="#about"><button class="black">Get started</button></a>
                         </div>
@@ -98,6 +102,12 @@
                         <p>applying to the exterior of your vehicle to protect against external paint.</p>
                     </div>
                 </div>
+                <div class="col-7 col">
+                    <div class="descrip">
+                        <h3>Interior Restoring</h3>
+                        <p>the process of bringing a piece of car back to its original condition.</p>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -119,6 +129,22 @@
                             <li>Authorized from <a aria-label="feynlab" href="https://www.feynlab.com">feynlab</a></li>
                             <li>Authorized from <a aria-label="nanoproof solutions" href="https://www.nanoproof.ae">nanoproof solutions</a></li>
                         </ul>
+                    </div>
+                    <div class="badges">
+                        <a href="https://unsplash.com" 
+                            data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+                            data-pswp-width="2500" 
+                            data-pswp-height="1666" 
+                            target="_blank">
+                            <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+                        </a>
+        <a href="https://unsplash.com" 
+        data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+        data-pswp-width="2500" 
+        data-pswp-height="1666" 
+        target="_blank">
+        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+      </a>
                     </div>
                 </div>
                 <div class="col">
@@ -181,6 +207,16 @@
 
                             </a>
                         </li>
+                        <li>
+                            <a href="#" aria-label="whatsapp" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="email" target="_blank" href="mailto: Reflection.rak@gmail.com">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </li>
                     </ul>
                     <h5>Location:
                         163 Al Thaqafah St - Al Dhait South - Ras al Khaimah
@@ -190,8 +226,9 @@
         </div>
     </footer>
 
-
+    <button id="translate-button">Translate to Arabic</button>
     
     <script src="./main.js"></script>
+    <script src="./test.js" type="module"></script>
 </body>
 </html>

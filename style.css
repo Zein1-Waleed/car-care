@@ -23,7 +23,7 @@ html{
 }
 
 .container{
-    padding: 3% 5%;
+    padding: 1% 5%;
 }
 a{
     text-decoration: none;
@@ -90,8 +90,8 @@ body{
 
 .home .vid video{
     width: 100%;
-    transform: scale(1.3);
     height: 100%;
+    object-fit: cover;
 }
 /* -----------home----------- */
 /* ------header------- */
@@ -101,19 +101,13 @@ header {
     border-radius: 0;
 }
 header .logo{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 header .logo .logo-desc{
-    position: absolute;
-    bottom: -20px;
-    left: -17px;
-    
-    display: block;
-    text-align: center;
-    text-transform: capitalize;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 nav {
     display: flex;
@@ -180,16 +174,6 @@ nav .logo img {
 
 /* ------landing------- */
 /* Reset some default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Apply basic styling to the body */
-body {
-    font-family: Arial, sans-serif;
-}
 
 /* Landing section styles */
 .landing {
@@ -209,20 +193,19 @@ body {
 }
 
 .landing .first-row h3 {
-    font-size: 2rem;
-    ; /* Adjust the font color as needed */
+    font-size: 2rem; /* Adjust the font color as needed */
     margin-bottom: 10px;
 }
 
 .landing .first-row h4 {
-    font-size: 4.5rem;
-     /* Adjust the font color as needed */
-     color: gray;
-    line-height: 1.2;
+    /* Adjust the font color as needed */
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 .landing .first-row h4 span{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
 }
 .landing .main-btn {
     margin-top: 30px;
@@ -247,7 +230,9 @@ body {
         font-size: 1.2rem;
     }
     .landing .first-row h4 span{
-        font-size: 1.2rem;
+        font-size:1.9rem;
+        letter-spacing: 1px;
+        -webkit-text-stroke: 2px white;
     }
 }
 
@@ -333,7 +318,9 @@ body {
     background-image: url(./sources/images/ceramic-coating.webp);
 }
 
-
+.services .container .col-7{
+    background-image: url(./sources/images/interiorestore.webp);
+}
 /* -----------services----------- */
 
 
@@ -347,6 +334,15 @@ body {
 }
 .about .container .col{
     flex-basis: 45%;
+}
+.about .container .col .badges{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+}
+.about .container .col .badges img{
+
 }
 .about .container .col iframe{
     border-radius: 20px;
