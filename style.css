@@ -170,7 +170,16 @@ nav .logo img {
     }
 }
 /* -------header------ */
-
+/* -----header langs----- */
+header .main-btn button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .main-btn img{
+    width: 20px;
+}
+/* -----header langs----- */
 
 /* ------landing------- */
 /* Reset some default margin and padding */
@@ -204,7 +213,7 @@ nav .logo img {
 }
 .landing .first-row h4 span{
     font-size: 4.5rem;
-    color: transparent;
+    color: gray;
     -webkit-text-stroke: 2px white;
 }
 .landing .main-btn {
