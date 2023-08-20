@@ -14,23 +14,8 @@ let currentSlide = 0;
             nextSlide()
         }
     }
-// function test(){
-//     for (let i = 0; i < vidindicator.length;i++){
-//         vidindicator[i].onclick = ()=>{
-//             currentSlide = vidindicator.indexOf(vidindicator[i])
-//             console.log(currentSlide)
-//         }
-//     }
-//     function nextSlide() {
-//         currentSlide = (currentSlide) % slides.length;
-//         slidesContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-//     }
-// }
 
-console.log(vidindicator)
-// vidindicator.forEach(element => {
-//     print(element)
-// });
-
-
-// Auto slide change (every 3 seconds)
+let logo = document.getElementById("logo")
+logo.onclick = ()=>{
+    window.location = "../../arabic page/arabic.html"
+}

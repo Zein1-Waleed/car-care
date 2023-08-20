@@ -346,12 +346,15 @@ header .main-btn img{
 }
 .about .container .col .badges{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
-    width: 80%;
+    width: 100%;
 }
-.about .container .col .badges img{
-
+.about .container .col .badges a{
+    flex-basis: 30%;
+}
+.about .container .col .badges a img{
+    width: 100%;
 }
 .about .container .col iframe{
     border-radius: 20px;

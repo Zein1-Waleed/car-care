@@ -214,7 +214,7 @@ header .main-btn img{
 }
 .landing .first-row h4 span{
     font-size: 4.5rem;
-    color: transparent;
+    color: gray;
     -webkit-text-stroke: 2px white;
 }
 .landing .main-btn {
@@ -348,15 +348,18 @@ header .main-btn img{
 }
 .about .container .col .badges{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
-    width: 80%;
+    width: 100%;
 }
-.about .container .col .badges img{
-
+.about .container .col .badges a{
+    flex-basis: 30%;
 }
 .about .container .col iframe{
     border-radius: 20px;
+}
+.about .container .col .badges a img{
+    width: 100%;
 }
 /* Your existing CSS styles here */
 
